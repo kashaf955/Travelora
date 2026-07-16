@@ -38,7 +38,7 @@ const Hero = () => {
 
         <div className="pointer-events-none absolute inset-0 z-20 flex flex-col items-center justify-center px-4">
           <div className="pointer-events-auto text-center mt-20 md:mt-32">
-            <h1 className='mb-4 text-3xl font-bold text-white sm:text-5xl md:text-4xl'>Discover the Beauty of the World</h1>
+            <h1 className='mb-4 text-3xl font-extrabold text-white sm:text-5xl md:text-4xl'>Discover the Beauty of the World</h1>
             <p className='mb-4 text-white'>Explore breathtaking destinations, create unforgettable memories and embark on a journey of a lifetime.</p>
             <button className='rounded-md bg-orange-500 px-4 py-2 text-white hover:bg-orange-600'>Explore Now</button>
           </div>
