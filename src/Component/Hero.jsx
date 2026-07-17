@@ -38,14 +38,14 @@ const Hero = () => {
 
         <div className="pointer-events-none absolute inset-0 z-20 flex flex-col items-center justify-center px-4">
           <div className="pointer-events-auto text-center mt-20 md:mt-32">
-            <h1 className='mb-4 text-3xl font-extrabold text-white sm:text-5xl md:text-4xl'>Discover the Beauty of the World</h1>
+            <h1 className='mb-4 text-3xl font-extrabold text-white sm:text-5xl font-serif'>Discover the Beauty of the World</h1>
             <p className='mb-4 text-white'>Explore breathtaking destinations, create unforgettable memories and embark on a journey of a lifetime.</p>
             <button className='rounded-md bg-orange-500 px-4 py-2 text-white hover:bg-orange-600'>Explore Now</button>
           </div>
 
           <div className='pointer-events-auto mt-10 hidden w-[min(1050px,calc(100%-2rem))] rounded-md border border-gray-300 bg-white p-4 shadow-lg lg:block'>
             <div className='flex items-center gap-3'>
-              <div className='grid min-w-0 flex-grow grid-cols-4 gap-5'>
+              <div className='grid min-w-0 flex-grow grid-cols-4 gap-5'> 
                 <div className='flex min-w-0 flex-col justify-center gap-2'>
                   <label htmlFor="" className='flex items-center gap-1 font-semibold'><Search className='h-4 w-4'/>Location</label>
                   <select name="" id="" className='w-full rounded-sm border border-gray-300 p-1'>
