@@ -3,6 +3,7 @@ import Hero from '../Component/Hero'
 import FeatureDestination from '../Component/FeatureDestination'
 import Features from '../Component/Features'
 import GalleryComp from '../Component/GalleryComp'
+import Banner from '../Component/Banner'
 const Home = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const Home = () => {
       <FeatureDestination />
       <Features />
       <GalleryComp />
+      <Banner />
     </>
   )
 }
