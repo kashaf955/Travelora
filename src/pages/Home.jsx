@@ -4,6 +4,7 @@ import FeatureDestination from '../Component/FeatureDestination'
 import Features from '../Component/Features'
 import GalleryComp from '../Component/GalleryComp'
 import Banner from '../Component/Banner'
+import Contact from '../Component/Contact'
 const Home = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const Home = () => {
       <Features />
       <GalleryComp />
       <Banner />
+      <Contact />
     </>
   )
 }

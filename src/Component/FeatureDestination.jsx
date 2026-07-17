@@ -123,7 +123,7 @@ const FeatureDestination = () => {
             </div>
               <div className='p-4'>
                 <p className='text-orange-500 flex items-center gap-1 text-sm mb-2 mt-2'><Clock width={15} height={15}/>{destination.time}</p>
-                <h3 className='text-lg font-bold mb-2'>{destination.name}</h3>
+                <h3 className='text-lg font-bold mb-2 font-serif'>{destination.name}</h3>
                 <p className='flex items-center gap-1 text-sm mb-1'><Star width={15} height={15}fill='orange'/>{destination.stars}</p>
                 <p className='text-sm text-gray-500 mb-4 mt-2'>Experience the best of {destination.name} with our expert guides and local insights.</p> 
                 <div className='flex items-center gap-1 text-sm mb-1 mt-2'>
