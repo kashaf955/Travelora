@@ -38,8 +38,8 @@ const Features = () => {
   return (
     <section className='w-full py-12 md:py-24 lg:py-20 px-6 md:px-0'>
       <div className='max-w-[1200px] mx-auto px-4 md:px-6'>
-        <h1 className='text-3xl font-bold tracking-tighter text-center mb-3 sm:text-5xl font-serif'>Features</h1>
-        <hr className='text-blue-500 w-[200px] bg-blue-500 mx-auto h-1 mb-10' />
+        <h1 className='text-3xl font-bold tracking-tighter text-center mb-3 sm:text-5xl font-serif'>Why Choose Our Services</h1>
+        <p className='text-sm text-gray-500 text-center mb-10'>We are a team of travel experts who are passionate about helping you explore the world.</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           {featuresJson.map((feature) => {
             const Icon = feature.icon
