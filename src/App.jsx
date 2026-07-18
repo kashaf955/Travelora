@@ -3,8 +3,8 @@ import Header from './Component/Header'
 import Home from './pages/Home.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Tours from './pages/Tours.jsx'
-import Gallery from './pages/Gallery.jsx'
-import Contact from './pages/Contact.jsx'
+import GalleryPage from './pages/Gallery.jsx'
+import ContactPage from './pages/Contact.jsx'
 import About from './pages/About.jsx'
 import Footer from './Component/Footer.jsx'
 const router = createBrowserRouter([
@@ -18,11 +18,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/gallery',
-    element: <><Header /> <Gallery /><Footer /></>
+    element: <><Header /> <GalleryPage /><Footer /></>
   },
   {
     path: '/contact',
-    element: <><Header /> <Contact /><Footer /></>
+    element: <><Header /> <ContactPage /><Footer /></>
   },
   {
     path: '/about',
