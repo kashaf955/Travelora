@@ -1,16 +1,81 @@
-# React + Vite
+# Travelora
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A travel and tourism website for discovering destinations, browsing tours, and getting in touch. Built with React, Vite, Tailwind CSS, and React Router.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home** — Hero, featured destinations, highlights, gallery preview, banner, and contact form
+- **About** — Company story and service highlights
+- **Tours** — Tour listings
+- **Gallery** — Photo gallery
+- **Contact** — Contact page
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/) 6
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [React Router](https://reactrouter.com/) 7
+- [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+- [react-slick](https://react-slick.neostack.com/) / [slick-carousel](https://kenwheeler.github.io/slick/) for carousels
+- [lightGallery](https://www.lightgalleryjs.com/) for the gallery
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- npm
+
+### Install
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal (usually `http://localhost:5173`).
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Project structure
+
+```
+src/
+├── Component/     # Shared UI (Header, Hero, Footer, etc.)
+├── pages/         # Route pages (Home, About, Tours, Gallery, Contact)
+├── assets/        # Images and static assets
+├── App.jsx        # Router setup
+└── main.jsx       # App entry
+```
+
+## Routes
+
+| Path       | Page    |
+| ---------- | ------- |
+| `/`        | Home    |
+| `/about`   | About   |
+| `/tours`   | Tours   |
+| `/gallery` | Gallery |
+| `/contact` | Contact |
