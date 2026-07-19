@@ -29,25 +29,27 @@ const galleryImages = [
 
 const GalleryComp = () => {
   return (
-    <section className='w-full py-12 md:py-24 lg:py-20 px-6 md:px-0'>
-      <div className='max-w-[1200px] mx-auto px-4 md:px-6'>
-        <h1 className='text-3xl font-bold tracking-tighter text-center mb-3 sm:text-5xl font-serif'>Gallery</h1>
-        <hr className='text-blue-500 w-[200px] bg-blue-500 mx-auto h-1 mb-10' />
+    <section className='w-full px-4 py-10 sm:px-6 sm:py-14 md:py-20'>
+      <div className='mx-auto max-w-[1200px]'>
+        <h2 className='mb-3 text-center font-serif text-2xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
+          Gallery
+        </h2>
+        <hr className='mx-auto mb-8 h-1 w-24 bg-blue-500 sm:mb-10 sm:w-[200px]' />
         <LightGallery
           speed={500}
           plugins={[lgZoom, lgThumbnail]}
-          elementClassNames='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'
+          elementClassNames='grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:gap-6 lg:grid-cols-3'
         >
           {galleryImages.map((image, index) => (
             <a
               key={index}
               href={image}
-              className='overflow-hidden border bg-orange-100 rounded-lg text-center cursor-pointer'
+              className='cursor-pointer overflow-hidden rounded-lg border bg-orange-100 text-center'
             >
               <img
                 src={image}
                 alt={`Gallery ${index + 1}`}
-                className='w-full h-60 object-cover hover:scale-110 transition-all duration-300'
+                className='h-48 w-full object-cover transition-all duration-300 hover:scale-110 sm:h-56 md:h-60'
               />
             </a>
           ))}

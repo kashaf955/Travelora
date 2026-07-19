@@ -36,20 +36,27 @@ const Features = () => {
   ]
 
   return (
-    <section className='w-full py-12 md:py-24 lg:py-20 px-6 md:px-0'>
-      <div className='max-w-[1200px] mx-auto px-4 md:px-6'>
-        <h1 className='text-3xl font-bold tracking-tighter text-center mb-3 sm:text-5xl font-serif'>Why Choose Our Services</h1>
-        <p className='text-sm text-gray-500 text-center mb-10'>We are a team of travel experts who are passionate about helping you explore the world.</p>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+    <section className='w-full px-4 py-10 sm:px-6 sm:py-14 md:py-20'>
+      <div className='mx-auto max-w-[1200px]'>
+        <h2 className='mb-2 text-center font-serif text-2xl font-bold tracking-tighter sm:mb-3 sm:text-4xl md:text-5xl'>
+          Why Choose Our Services
+        </h2>
+        <p className='mx-auto mb-8 max-w-2xl text-center text-sm text-gray-500 sm:mb-10 sm:text-base'>
+          We are a team of travel experts who are passionate about helping you explore the world.
+        </p>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3'>
           {featuresJson.map((feature) => {
             const Icon = feature.icon
             return (
-              <div key={feature.name} className='overflow-hidden border bg-orange-100 rounded-lg p-6 text-center'>
-                <div className='flex justify-center mb-4'>
-                  <Icon className='w-12 h-12 text-orange-500' />
+              <div
+                key={feature.name}
+                className='overflow-hidden rounded-lg border bg-orange-100 p-5 text-center sm:p-6'
+              >
+                <div className='mb-3 flex justify-center sm:mb-4'>
+                  <Icon className='h-10 w-10 text-orange-500 sm:h-12 sm:w-12' />
                 </div>
-                <h3 className='text-lg font-bold mb-2'>{feature.name}</h3>
-                <p className='text-sm text-gray-500'>{feature.description}</p>
+                <h3 className='mb-2 text-base font-bold sm:text-lg'>{feature.name}</h3>
+                <p className='text-xs text-gray-500 sm:text-sm'>{feature.description}</p>
               </div>
             )
           })}
